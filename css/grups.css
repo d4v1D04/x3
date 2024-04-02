@@ -1,0 +1,129 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: "Quicksand", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+}
+
+header{
+	width: 100%;
+	height: auto;
+	background-color: purple;
+	display: flex;
+}
+
+#logotipo{
+	width: 50%;
+	height: 50%;
+	padding: 2%;
+}
+
+#logotipo img{
+	width: 20%;
+}
+
+nav{
+	width: 50%;
+	display: flex;
+}
+
+#menu{
+	width: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	list-style: none;
+	padding: 5vh;
+}
+
+.linksmenu{
+	width: auto;
+	margin: 0px 10px;
+	font-weight: bolder;
+	font-size: 1.2rem;
+}
+
+.linksmenu a{
+	text-decoration: none;
+	color: white;
+}
+
+.linksmenu a:hover{
+	text-decoration-line: underline;
+	text-decoration-thickness: 3px;
+}
+
+
+#grupos {
+    width: 100vw;
+    height: auto;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5% 10% 5% 10%;
+}
+
+.grupo {
+    width: 50%;
+    height: auto;
+    padding-bottom: 10%;
+    padding: 6%;
+}
+
+.grupo img {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 70%;
+    padding: 5% 0% 5% 0%;
+}
+
+p {
+    font-size: 1.2rem;
+    width: 70%;
+    padding: 0% 0% 2% 0%;
+}
+
+footer {
+    background-color: purple;
+    padding: 10%;
+    color: white;
+}
+
+.footer-caja {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+	width: 25%;
+}
+
+@media screen and (max-width: 768px) {
+    #menu {
+        flex-direction:column;
+        width: 100%;
+    }
+
+    .footer-caja {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 5%;
+    }
+}
